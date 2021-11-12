@@ -11,7 +11,7 @@ All **GET methods** are associated with retrieving Utradea's social insights by 
 
 ```
 // GET SENTIMENT
-https://api.utradea.com/v1/get-social
+https://cloud.utradea.com/v1/get-social
 ```
 
 {% hint style="info" %}

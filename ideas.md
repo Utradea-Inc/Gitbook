@@ -10,7 +10,7 @@ All **GET methods** associated with retrieving Utradea's user-generated ideas/po
 
 ```
 // GET IDEAS
-https://api.utradea.com/v1/get-ideas
+https://cloud.utradea.com/v1/get-ideas
 ```
 
 {% hint style="info" %}
