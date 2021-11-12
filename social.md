@@ -55,18 +55,6 @@ Indicator to include tickers that are trending as captured in the Social Dashboa
 `?social=reddit,stocktwits,twitter`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" required="true" name="isCrypto" type="String" %}
-social media source you wish to return social insights for a given ticker.
-
-
-
-**Accepted Values:**
-
-`?isCrypto=true`
-
-`?isCrypto=false`
-{% endswagger-parameter %}
-
 {% swagger-parameter in="query" name="charts" type="String" required="true" %}
 The charts parameter defines the type of social insight that can be returned in this query. You can specify one type of chart or multiple charts.
 
