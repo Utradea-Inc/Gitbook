@@ -34,9 +34,9 @@ ticker representing either a company or crypto currency.
 
 Accepted Values:
 
-`?ticker='PLTR'`
+`?ticker=PLTR`
 
-`?ticker='PLTR,GOOGL'`
+`?ticker=PLTR,GOOGL`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" required="true" name="social" type="String" %}
@@ -46,11 +46,11 @@ Indicator to include tickers that are trending as captured in the Social Dashboa
 
 Accepted Values:
 
-`?social= 'reddit'`
+`?social= reddit`
 
-`?social= 'stocktwits'`
+`?social= stocktwits`
 
-`?social= 'twitter'`
+`?social= twitter`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" required="true" name="isCrypto" type="String" %}
@@ -63,30 +63,6 @@ social media source you wish to return social insights for a given ticker.
 `?isCrypto= 'true'`
 
 `?isCrypto= 'false'`
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="timestamp" type="String" required="true" %}
-The overall time horizon specified to capture social insights for.
-
-
-
-**Accepted Values:**
-
-`'24h'`
-
-`'72h'`
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="bucket" type="String" required="true" %}
-The bucket parameter defines the interval frequency of social insights within a measured time horizon.
-
-
-
-**Accepted Values:**
-
-**'15m'**
-
-**'1hr'**
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="charts" type="String" required="true" %}
