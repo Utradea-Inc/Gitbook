@@ -32,7 +32,7 @@ ticker representing either a company or crypto currency.
 
 
 
-Accepted Values:
+**Accepted Values:**
 
 `?ticker=PLTR`
 
@@ -44,7 +44,7 @@ Indicator to include tickers that are trending as captured in the Social Dashboa
 
 
 
-Accepted Values:
+**Accepted Values:**
 
 `?social=reddit`
 
@@ -72,7 +72,7 @@ The charts parameter defines the type of social insight that can be returned in 
 
 
 
-Accepted Values:
+**Accepted Values:**
 
 `?charts=posts`,
 
