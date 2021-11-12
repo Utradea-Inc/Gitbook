@@ -91,35 +91,37 @@ application/json
 ${YOUR_APIKEY}
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Output" %}
+{% swagger-response status="200: OK" description="Successful requests will return the following response." %}
 ```javascript
-{
-  output: [
-  {
-    "stocktwitsPosts": 1,
-    "stocktwitsComments": 15,
-    "stocktwitsLikes": 72,
-    "stocktwitsImpressions": 3,
-    "symbol": "PLTR",
-    "timestamp": "2021-11-07T22:00:00.000Z"
-  },
-  {
-    "stocktwitsPosts": 2,
-    "stocktwitsComments": 0,
-    "stocktwitsLikes": 0,
-    "stocktwitsImpressions": 378,
-    "symbol": "PLTR",
-    "timestamp": "2021-11-07T22:15:00.000Z"
-  },
-  {
-    "stocktwitsPosts": 2,
-    "stocktwitsComments": 0,
-    "stocktwitsLikes": 0,
-    "stocktwitsImpressions": 166,
-    "symbol": "PLTR",
-    "timestamp": "2021-11-07T22:30:00.000Z"
-  }
-]
+{ 
+  statusCode: 200,
+  output: 
+    [
+      {
+        "stocktwitsPosts": 1,
+        "stocktwitsComments": 15,
+        "stocktwitsLikes": 72,
+        "stocktwitsImpressions": 3,
+        "symbol": "PLTR",
+        "timestamp": "2021-11-07T22:00:00.000Z"
+      },
+      {
+        "stocktwitsPosts": 2,
+        "stocktwitsComments": 0,
+        "stocktwitsLikes": 0,
+        "stocktwitsImpressions": 378,
+        "symbol": "PLTR",
+        "timestamp": "2021-11-07T22:15:00.000Z"
+      },
+      {
+        "stocktwitsPosts": 2,
+        "stocktwitsComments": 0,
+        "stocktwitsLikes": 0,
+        "stocktwitsImpressions": 166,
+        "symbol": "PLTR",
+        "timestamp": "2021-11-07T22:30:00.000Z"
+      }
+  ]
 }
 ```
 {% endswagger-response %}
