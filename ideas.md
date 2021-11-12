@@ -60,15 +60,42 @@ Pass '
 ' to return the condensed or  detailed version of the ideas object.
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="" %}
+{% swagger-response status="200: OK" description="Successful requests will return the following response." %}
 ```javascript
 {
-    // Response
+    statusCode 200,
+    "output": [
+      {
+        "premium": false,
+        "catalysts": [
+            "news",
+            "secFiling",
+            "otherCatalyst"
+        ],
+        "username": "joeytribbiani",
+        "ticker": "TSLA",
+        "entryPrice": 1184.69,
+        "slug": "Random-idea_0",
+        "positionStatus": "new-submission",
+        "positionTitle": "Random idea",
+        "targetPrice": 1303.16,
+        "sentiment": "bullish",
+        "confidence": 1,
+        "durationIndex": "< 1 Week",
+        "analysisType": "general",
+        "contentText": "Testing Testing Testing\n\n\n\n\nTesting Testing Testing\n\n\n\n\nTesting Testing Testing\n\n\n\n\n\n\n\nTesting Testing Testing",
+        "createdAt": "2021-11-08T19:19:10.805Z",
+        "commentsCount": 0,
+        "upvotedownvoteCount": 0,
+        "upvotes": 0,
+        "downvotes": 0
+        }
+    ]
 }
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% swagger-response status="400: Bad Request" description="The following error message is triggered if you do not pass the proper query parameters." %}
 ```javascript
 {
     statusCode: 400,
@@ -77,7 +104,7 @@ Pass '
 ```
 {% endswagger-response %}
 
-{% swagger-response status="403: Forbidden" description="" %}
+{% swagger-response status="403: Forbidden" description="The following error message is triggered if you do not have the proper authentication." %}
 ```javascript
 {
     statusCode: 403,
@@ -86,7 +113,7 @@ Pass '
 ```
 {% endswagger-response %}
 
-{% swagger-response status="429: Too Many Requests" description="" %}
+{% swagger-response status="429: Too Many Requests" description="The following error message is triggered when the number of requests exceed the rate limit specified for your membership tier." %}
 ```javascript
 {
     statusCode: 429,
@@ -95,7 +122,7 @@ Pass '
 ```
 {% endswagger-response %}
 
-{% swagger-response status="500: Internal Server Error" description="" %}
+{% swagger-response status="500: Internal Server Error" description="The following error message is triggered if there is an issue with Utradea's server." %}
 ```javascript
 {
     statusCode: 500,
