@@ -39,15 +39,13 @@ The company OR crypto symbol, as it is defined in Utradea. To pass multiple symb
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="startDate" type="Integer" %}
-Integer representation of a Date Time object.&#x20;
-
-e.g - 20211102
+Integer representation of a date-time object. 
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="endDate" type="Integer" %}
-Integer representation of a Date Time object
+Integer representation of a date-time object
 
-e.g - 20211102
+
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="smallProjection" type="String" %}
@@ -73,7 +71,8 @@ Pass '
 {% swagger-response status="400: Bad Request" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 400,
+    errorMessage: "Invalid Chart Type Error."
 }
 ```
 {% endswagger-response %}
@@ -81,7 +80,8 @@ Pass '
 {% swagger-response status="403: Forbidden" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 403,
+    errorMessage: "Invalid Chart Type Error."
 }
 ```
 {% endswagger-response %}
@@ -89,7 +89,8 @@ Pass '
 {% swagger-response status="429: Too Many Requests" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 429,
+    errorMessage: "You have exceeded your rate limit of 5 requests in 15 minutes!"
 }
 ```
 {% endswagger-response %}
@@ -97,7 +98,8 @@ Pass '
 {% swagger-response status="500: Internal Server Error" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 500,
+    errorMessage: "Internal Server Error."
 }
 ```
 {% endswagger-response %}
