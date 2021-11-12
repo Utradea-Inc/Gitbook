@@ -94,7 +94,7 @@ ${YOUR_APIKEY}
 {% swagger-response status="200: OK" description="Successful requests will return the following response." %}
 ```javascript
 { 
-  statusCode: 200,
+  statusCode: 200, 
   output: 
     [
       {
