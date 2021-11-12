@@ -137,7 +137,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
 {
   "output": [
     {
-      "_id": "6189782eb3d9882f6d4c006a",
       "premium": false,
       "catalysts": [
         "news",
@@ -163,7 +162,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "6123c3c8514d5e23bf7ff599",
       "catalysts": [
         "sentiment",
         "secFiling"
@@ -187,7 +185,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "6123b9c8514d5e23bf7ff594",
       "catalysts": [
         "news",
         "secFiling"
@@ -211,7 +208,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "6123b92b514d5e23bf7ff58f",
       "catalysts": [
         "news",
         "secFiling"
@@ -235,7 +231,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "611d4c0b4bbc951c3736dcf3",
       "catalysts": [
         "financials"
       ],
@@ -260,7 +255,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "611d4bc54bbc951c3736db90",
       "catalysts": [
         "secFiling",
         "news",
@@ -285,7 +279,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "60f5ee5efedb8c489cc72dc9",
       "catalysts": [
         "secFiling",
         "news",
@@ -310,7 +303,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "60f4b7de4050a451f4bd8bb7",
       "catalysts": [
         "secFiling",
         "earningsRelease",
@@ -335,7 +327,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "60e7548a78c53c69e8af77c0",
       "catalysts": [
         "secFiling",
         "earningsRelease",
@@ -360,7 +351,6 @@ const getIdeas = async () => new Promise((resolve, reject) => {
       "downvotes": 0
     },
     {
-      "_id": "60dcc0648207b15bd825d50f",
       "catalysts": [],
       "username": "jokinglol",
       "ticker": "TSLA",
