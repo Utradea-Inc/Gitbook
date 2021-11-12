@@ -60,9 +60,9 @@ social media source you wish to return social insights for a given ticker.
 
 **Accepted Values:**
 
-`?isCrypto= 'true'`
+`?isCrypto= true`
 
-`?isCrypto= 'false'`
+`?isCrypto= false`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="charts" type="String" required="true" %}
@@ -72,23 +72,13 @@ The charts parameter defines the type of social insight that can be returned in 
 
 Accepted Values:
 
-`posts`,
+`?charts=posts`,
 
-`comments`,
+`?charts=comments`,
 
-`likes`,
+`?charts=likes`,
 
-`impressions`
-
-``
-
-`E.g: ?`
-
-`charts=impressions`
-
-`charts=posts,comments,likes,impressions`
-
-
+`?charts=impressions`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" required="true" name="Content-Type" type="String" %}
@@ -99,18 +89,44 @@ application/json
 ${YOUR_APIKEY}
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="" %}
+{% swagger-response status="200: OK" description="Output" %}
 ```javascript
 {
-    // Response
+  output: [
+  {
+    "stocktwitsPosts": 1,
+    "stocktwitsComments": 15,
+    "stocktwitsLikes": 72,
+    "stocktwitsImpressions": 3,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:00:00.000Z"
+  },
+  {
+    "stocktwitsPosts": 2,
+    "stocktwitsComments": 0,
+    "stocktwitsLikes": 0,
+    "stocktwitsImpressions": 378,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:15:00.000Z"
+  },
+  {
+    "stocktwitsPosts": 2,
+    "stocktwitsComments": 0,
+    "stocktwitsLikes": 0,
+    "stocktwitsImpressions": 166,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:30:00.000Z"
+  }
+]
 }
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% swagger-response status="400: Bad Request" description="Error Message:" %}
 ```javascript
 {
-    // Response
+    statusCode: 400,
+    errorMessage: "Invalid Chart Type Error."
 }
 ```
 {% endswagger-response %}
