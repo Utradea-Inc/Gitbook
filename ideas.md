@@ -21,7 +21,7 @@ Expand the below GET method table for details.
 
 ## Endpoints
 
-{% swagger method="get" path="https://api.utradea.com/v1/get-ideas" baseUrl="URL: " summary="/get-ideas" %}
+{% swagger method="get" path="https://cloud.utradea.com/v1/get-ideas" baseUrl="URL: " summary="/get-ideas" %}
 {% swagger-description %}
 Request ideas by ticker, start and end date.
 {% endswagger-description %}
@@ -142,7 +142,7 @@ const axios = require("axios")
 const getIdeas = async () => new Promise((resolve, reject) => {
     var options = {
         method: 'GET',
-        url: 'https://api.utradea.com/v1/get-ideas?ticker=PLTR,GOOGL,FB&?start=20211102?end=20211103',
+        url: 'https://cloud.utradea.com/v1/get-ideas?ticker=PLTR,GOOGL,FB&?start=20211102?end=20211103',
         headers: {'
             'Content-Type': 'application/json',
             'Authorization': ${YOUR_APIKEY}

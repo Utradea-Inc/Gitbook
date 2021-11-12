@@ -22,7 +22,7 @@ Expand the below GET method table for details.
 
 ### Endpoints
 
-{% swagger method="get" path="https://api.utradea.com/v1/get-social" baseUrl="URL:" summary="/get-social" %}
+{% swagger method="get" path="https://cloud.utradea.com/v1/get-social" baseUrl="URL:" summary="/get-social" %}
 {% swagger-description %}
 
 {% endswagger-description %}

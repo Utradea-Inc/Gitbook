@@ -6,7 +6,7 @@ description: The SEC API returns sec filings analyzed by Utradea.
 
 ```
 // GET SEC
-https://api.utradea.com/v1/get-sec
+https://cloud.utradea.com/v1/get-sec
 ```
 
 ### Endpoints
