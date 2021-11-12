@@ -124,7 +124,7 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Error Message:" %}
+{% swagger-response status="400: Bad Request" description="The following error message is triggered if you do not pass the proper query parameters." %}
 ```javascript
 {
     statusCode: 400,
@@ -133,26 +133,29 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
-{% swagger-response status="403: Forbidden" description="" %}
+{% swagger-response status="403: Forbidden" description="The following error message is triggered if you do not have the proper authentication." %}
 ```javascript
 {
-    // Response
+    statusCode: 403,
+    errorMessage: "Invalid Chart Type Error."
 }
 ```
 {% endswagger-response %}
 
-{% swagger-response status="429: Too Many Requests" description="" %}
+{% swagger-response status="429: Too Many Requests" description="The following error message is triggered when the number of requests exceed the rate limit specified for your membership tier." %}
 ```javascript
 {
-    // Response
+    statusCode: 429,
+    errorMessage: "You have exceeded your rate limit of 5 requests in 15 minutes!"
 }
 ```
 {% endswagger-response %}
 
-{% swagger-response status="500: Internal Server Error" description="" %}
+{% swagger-response status="500: Internal Server Error" description="The following error message is triggered if there is an issue with Utradea's server." %}
 ```javascript
 {
-    // Response
+    statusCode: 500,
+    errorMessage: "Internal Server Error."
 }
 ```
 {% endswagger-response %}
