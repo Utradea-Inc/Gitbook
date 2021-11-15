@@ -98,10 +98,10 @@ Pass '
 ```
 {% endswagger-response %}
 
-{% swagger-response status="403: Forbidden" description="The following error message is triggered if you do not have the proper authentication." %}
+{% swagger-response status="401: Unauthorized" description="The following error message is triggered if you do not have the proper authentication." %}
 ```javascript
 {
-    statusCode: 403,
+    statusCode: 401,
     errorMessage: "Invalid Authorization Token."
 }
 ```

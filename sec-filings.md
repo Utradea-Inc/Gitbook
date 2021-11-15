@@ -52,7 +52,7 @@ application/json
 ${YOUR_APIKEY}
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="" %}
+{% swagger-response status="200: OK" description="Successful requests will return the following response." %}
 ```javascript
 {
     // Response
@@ -92,7 +92,7 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400" description="" %}
+{% swagger-response status="400" description="The following error message is triggered if you do not pass the proper query parameters." %}
 ```javascript
 {
     statusCode: 400,
@@ -101,7 +101,7 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
-{% swagger-response status="401: Unauthorized" description="" %}
+{% swagger-response status="401: Unauthorized" description="The following error message is triggered if you do not have the proper authentication." %}
 ```javascript
 {
     statusCode: 401,
@@ -110,16 +110,7 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
-{% swagger-response status="403: Forbidden" description="" %}
-```javascript
-{
-    statusCode: 403,
-    errorMessage: "Invalid Chart Type Error."
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="429: Too Many Requests" description="" %}
+{% swagger-response status="429: Too Many Requests" description="The following error message is triggered when the number of requests exceed the rate limit specified for your membership tier." %}
 ```javascript
 {
     statusCode: 429,
@@ -128,7 +119,7 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
-{% swagger-response status="500: Internal Server Error" description="" %}
+{% swagger-response status="500: Internal Server Error" description="The following error message is triggered if there is an issue with Utradea's server." %}
 ```javascript
 {
     statusCode: 500,
