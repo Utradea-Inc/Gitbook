@@ -69,6 +69,10 @@ On the Settings page, look for the 'API' section. Click '**Generate API Key**' t
 
 To generate a new key, simply click '**Generate API Key'**. The previously generated key will be deleted, and a new created at timestamp record will display.
 
+![Click on the refresh icon to generate an api secret key.](<.gitbook/assets/image (3).png>)
+
 To copy your key for usage, click on '**Copy**'.&#x20;
+
+![A timestamp will be displayed in this section to tell you when you last created the api secret key.](<.gitbook/assets/image (1).png>)
 
 #### **Now you are ready to make your first request!**
