@@ -34,7 +34,7 @@ application/json
 ${YOUR_APIKEY}
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" required="true" name="ticker" %}
+{% swagger-parameter in="query" required="true" name="tickers" %}
 The company OR crypto symbol, as it is defined in Utradea. To pass multiple symbols, use a comma to seperate tickers.
 {% endswagger-parameter %}
 
@@ -42,13 +42,7 @@ The company OR crypto symbol, as it is defined in Utradea. To pass multiple symb
 Integer representation of a date-time object. 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="endDate" type="Integer" %}
-Integer representation of a date-time object
-
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="smallProjection" type="String" %}
+{% swagger-parameter in="query" name="extend" type="String" %}
 Pass '
 
 **true**
