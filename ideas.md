@@ -34,7 +34,7 @@ application/json
 ${YOUR_APIKEY}
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" required="true" name="tickers" %}
+{% swagger-parameter in="query" required="true" name="tickers" type="String" %}
 The company OR crypto symbol, as it is defined in Utradea. To pass multiple symbols, use a comma to seperate tickers.
 {% endswagger-parameter %}
 
