@@ -56,6 +56,38 @@ ${YOUR_APIKEY}
 ```javascript
 {
     // Response
+    statusCode: 200,
+    output: [
+  {
+    "documentLink": "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_10q.htm",
+    "acceptedDate": "2021-11-12T22:23:32.000Z",
+    "articleContent": {
+      "summary": "On August 19, 2021, the Company issued an unsecured promissory note (the “Promissory Note”) to the Sponsor, pursuant to which the Company could borrow up to an aggregate principal amount of $2,000,000. The Promissory Note is non-interest bearing and payable on the consummation of the merger, capital stock exchange, asset acquisition,\n              stock purchase, reorganization or similar business combination with one or more businesses. Once the warrants become exercisable, the Company may redeem the Public Warrants: The amount outstanding under the Promissory Note  ",
+      "articleDetails": [
+        "an aggregate principal amount",
+        "the Promissory Note",
+        "which",
+        "the consummation",
+        "the merger",
+        "one or more businesses",
+        "the Sponsor"
+      ],
+      "articleNumberReferences": [
+        "$2,000,000"
+      ],
+      "exhibits": [
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex31-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex31-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex32-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex32-2.htm"
+      ]
+    },
+    "company": "Sports Entertainment Acquisition Corp.",
+    "documentType": "10-Q",
+    "items": [],
+    "ticker": "SEAH"
+  }
+]
 }
 ```
 {% endswagger-response %}
@@ -112,63 +144,37 @@ const getSEC = async () => new Promise((resolve, reject) => {
 
 {% tab title="Sample JSON Response" %}
 ```javascript
-{
-    "endpoint": "https://api.utradea.com/enterprise/get-sec",
-    "data": [
-            {
-                'ticker': "PLTR",
-                'cik'   : "123356",
-                'company': "Palantir Technologies",
-                'filings': {
-                    '10-K': [
-                        {
-                            'accessionNumber': "",
-                            'documentLink':    "",
-                            'itemNumbers':     "",
-                            'items':           "",
-                            'articleContent': {
-                                    'summary': "",
-                                    'articleDetails': [],
-                                    'articleNumberReferences': [],
-                                    'exhibits':[]
-                            },
-                            'acceptedDate': 2020-06-05T00:45:15.000+00:00,
-                        }
-                    ],
-                    '10-Q': [
-                         {
-                            'accessionNumber': "",
-                            'documentLink':    "",
-                            'itemNumbers':     "",
-                            'items':           "",
-                            'articleContent': {
-                                    'summary': "",
-                                    'articleDetails': [],
-                                    'articleNumberReferences': [],
-                                    'exhibits':[]
-                            },
-                            'acceptedDate': 2020-06-05T00:45:15.000+00:00,
-                        }
-                    ],
-                    '8-K' : [
-                         {
-                            'accessionNumber': "",
-                            'documentLink':    "",
-                            'itemNumbers':     "",
-                            'items':           "",
-                            'articleContent': {
-                                    'summary': "",
-                                    'articleDetails': [],
-                                    'articleNumberReferences': [],
-                                    'exhibits':[]
-                            },
-                            'acceptedDate': 2020-06-05T00:45:15.000+00:00,
-                        }
-                    ],
-                }
-            }
-    ]
-}
+[
+  {
+    "documentLink": "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_10q.htm",
+    "acceptedDate": "2021-11-12T22:23:32.000Z",
+    "articleContent": {
+      "summary": "On August 19, 2021, the Company issued an unsecured promissory note (the “Promissory Note”) to the Sponsor, pursuant to which the Company could borrow up to an aggregate principal amount of $2,000,000. The Promissory Note is non-interest bearing and payable on the consummation of the merger, capital stock exchange, asset acquisition,\n              stock purchase, reorganization or similar business combination with one or more businesses. Once the warrants become exercisable, the Company may redeem the Public Warrants: The amount outstanding under the Promissory Note  ",
+      "articleDetails": [
+        "an aggregate principal amount",
+        "the Promissory Note",
+        "which",
+        "the consummation",
+        "the merger",
+        "one or more businesses",
+        "the Sponsor"
+      ],
+      "articleNumberReferences": [
+        "$2,000,000"
+      ],
+      "exhibits": [
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex31-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex31-2.htm",
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex32-1.htm",
+        "https://www.sec.gov/Archives/edgar/data/1820852/000114036121037701/brhc10030482_ex32-2.htm"
+      ]
+    },
+    "company": "Sports Entertainment Acquisition Corp.",
+    "documentType": "10-Q",
+    "items": [],
+    "ticker": "SEAH"
+  }
+]
 ```
 {% endtab %}
 {% endtabs %}
