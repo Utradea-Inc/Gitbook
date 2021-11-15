@@ -92,10 +92,29 @@ ${YOUR_APIKEY}
 ```
 {% endswagger-response %}
 
+{% swagger-response status="400" description="" %}
+```javascript
+{
+    statusCode: 400,
+    errorMessage: "Invalid Chart Type Error."
+}
+```
+{% endswagger-response %}
+
 {% swagger-response status="401: Unauthorized" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 401,
+    errorMessage: "Invalid Chart Type Error."
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="403: Forbidden" description="" %}
+```javascript
+{
+    statusCode: 403,
+    errorMessage: "Invalid Chart Type Error."
 }
 ```
 {% endswagger-response %}
@@ -103,7 +122,8 @@ ${YOUR_APIKEY}
 {% swagger-response status="429: Too Many Requests" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 429,
+    errorMessage: "You have exceeded your rate limit of 5 requests in 15 minutes!"
 }
 ```
 {% endswagger-response %}
@@ -111,7 +131,8 @@ ${YOUR_APIKEY}
 {% swagger-response status="500: Internal Server Error" description="" %}
 ```javascript
 {
-    // Response
+    statusCode: 500,
+    errorMessage: "Internal Server Error."
 }
 ```
 {% endswagger-response %}

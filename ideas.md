@@ -102,7 +102,7 @@ Pass '
 ```javascript
 {
     statusCode: 403,
-    errorMessage: "Invalid Chart Type Error."
+    errorMessage: "Invalid Authorization Token."
 }
 ```
 {% endswagger-response %}
