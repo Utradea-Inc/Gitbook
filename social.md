@@ -27,7 +27,7 @@ Expand the below GET method table for details.
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" required="true" name="ticker" type="String" %}
+{% swagger-parameter in="query" required="true" name="tickers" type="String" %}
 ticker representing either a company or crypto currency.
 
 
