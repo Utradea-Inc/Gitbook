@@ -180,77 +180,99 @@ const getIdeas = async () => new Promise((resolve, reject) => {
 ```
 {% endtab %}
 
-{% tab title="Sample Response " %}
+{% tab title="Response | Reddit" %}
 ```javascript
 [
   {
-    "stocktwitsPosts": 98,
-    "twitterPosts": 429,
-    "redditPosts": 1,
-    "stocktwitsComments": 161,
-    "twitterComments": 17318,
-    "redditComments": 21,
-    "stocktwitsLikes": 554,
-    "twitterLikes": 86789,
-    "redditLikes": 18,
-    "stocktwitsImpressions": 11897,
-    "twitterImpressions": 526226,
-    "redditImpressions": 0,
-    "symbol": "AMC",
-    "timestamp": "2021-11-14T21:00:00.000Z"
-  },
-  {
-    "stocktwitsPosts": 96,
-    "twitterPosts": 281,
-    "redditPosts": 1,
-    "stocktwitsComments": 197,
-    "twitterComments": 32279,
-    "redditComments": 0,
-    "stocktwitsLikes": 781,
-    "twitterLikes": 160733,
-    "redditLikes": 0,
-    "stocktwitsImpressions": 10257,
-    "twitterImpressions": 541867,
-    "redditImpressions": 0,
-    "symbol": "AMC",
-    "timestamp": "2021-11-14T22:00:00.000Z"
-  },
-  {
-    "stocktwitsPosts": 105,
-    "twitterPosts": 312,
     "redditPosts": 0,
-    "stocktwitsComments": 127,
-    "twitterComments": 27503,
     "redditComments": 0,
-    "stocktwitsLikes": 766,
-    "twitterLikes": 152436,
     "redditLikes": 0,
-    "stocktwitsImpressions": 50234,
-    "twitterImpressions": 416098,
     "redditImpressions": 0,
-    "symbol": "AMC",
-    "timestamp": "2021-11-14T23:00:00.000Z"
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T21:00:00.000Z"
   },
   {
-    "stocktwitsPosts": 0,
-    "twitterPosts": 0,
     "redditPosts": 0,
-    "stocktwitsComments": 77,
-    "twitterComments": 14986,
     "redditComments": 0,
-    "stocktwitsLikes": 487,
-    "twitterLikes": 80375,
     "redditLikes": 0,
-    "stocktwitsImpressions": 0,
-    "twitterImpressions": 0,
     "redditImpressions": 0,
-    "symbol": "AMC",
-    "timestamp": "2021-11-15T00:00:00.000Z"
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T21:15:00.000Z"
+  },
+  {
+    "redditPosts": 0,
+    "redditComments": 0,
+    "redditLikes": 0,
+    "redditImpressions": 0,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T21:30:00.000Z"
   }
 ]
 ```
 
 
+{% endtab %}
+
+{% tab title="Response | Twitter" %}
+```javascript
+[
+  {
+    "twitterPosts": 0,
+    "twitterComments": 0,
+    "twitterLikes": 0,
+    "twitterImpressions": 0,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:00:00.000Z"
+  },
+  {
+    "twitterPosts": 0,
+    "twitterComments": 0,
+    "twitterLikes": 0,
+    "twitterImpressions": 0,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:15:00.000Z"
+  },
+  {
+    "twitterPosts": 0,
+    "twitterComments": 0,
+    "twitterLikes": 0,
+    "twitterImpressions": 0,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:30:00.000Z"
+  }
+]
+```
+{% endtab %}
+
+{% tab title="Response | Stocktwits" %}
+```javascript
+[
+  {
+    "stocktwitsPosts": 1,
+    "stocktwitsComments": 15,
+    "stocktwitsLikes": 72,
+    "stocktwitsImpressions": 3,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:00:00.000Z"
+  },
+  {
+    "stocktwitsPosts": 2,
+    "stocktwitsComments": 0,
+    "stocktwitsLikes": 0,
+    "stocktwitsImpressions": 378,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:15:00.000Z"
+  },
+  {
+    "stocktwitsPosts": 2,
+    "stocktwitsComments": 0,
+    "stocktwitsLikes": 0,
+    "stocktwitsImpressions": 166,
+    "symbol": "PLTR",
+    "timestamp": "2021-11-07T22:30:00.000Z"
+  }
+]
+```
 {% endtab %}
 {% endtabs %}
 
