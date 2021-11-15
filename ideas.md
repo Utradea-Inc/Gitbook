@@ -42,6 +42,10 @@ The company OR crypto symbol, as it is defined in Utradea. To pass multiple symb
 Integer representation of a date-time object. 
 {% endswagger-parameter %}
 
+{% swagger-parameter in="query" name="endDate" type="Integer" %}
+Integer representation of a date-time object.
+{% endswagger-parameter %}
+
 {% swagger-parameter in="query" name="extend" type="String" %}
 Pass '
 
