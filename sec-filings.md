@@ -24,26 +24,6 @@ Pass a ticker symbol to return sec filings specific to that ticker.
 Pass document type to filter on what type of sec filings to return. If this option is not passed the API will return what is available.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="startDate" type="String" %}
-Pass an integer representation of a datetime object to specify the start date. If this option is not passed the API will query by the first available datetime stamp associated with a stored sec filing.
-
-
-
-A**ccepted Values:**
-
-20211103
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="endDate" type="String" %}
-Pass an integer representation of a datetime object to specify the start date. If this option is not passed the API will return results up to the current date.
-
-
-
-**Accepted Values:**
-
-20211104
-{% endswagger-parameter %}
-
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
 application/json
 {% endswagger-parameter %}
